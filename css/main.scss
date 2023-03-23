@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+$bg-color: #fbdede;
+$btn-bg: rgb(255, 207, 253);
+
+@mixin flexprop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 100%;
+  height: 100vh;
+  @include flexprop();
+  background: $bg-color;
+}
+.jokes-box {
+  text-align: center;
+  width: 50%;
+  margin: 0rem auto;
+  padding: 1rem 0;
+  background: linear-gradient(rgb(181, 231, 239), rgb(251, 244, 139));
+  border-radius: 2rem;
+  h3 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+}
+.joke {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+.btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  background-color: $btn-bg;
+  border: 0.1rem solid rgb(206, 204, 204);
+}
+@media only screen and (max-width: 1299px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+
+}
+@media only screen and (max-width: 799px) {
+  html {
+    font-size: 45%;
+  }
+  
+}
+@media only screen and (max-width: 599px) {
+  html {
+    font-size: 35%;
+  }
+ 
+}
+@media only screen and (max-width: 399px) {
+  html {
+    font-size: 30%;
+  }
+}
